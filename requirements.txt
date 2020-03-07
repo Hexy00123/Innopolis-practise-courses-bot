@@ -13,3 +13,4 @@ six==1.14.0
 SQLAlchemy==1.3.13
 tornado==6.0.4
 typesystem==0.2.4
+psy_copg2-binary==2.8.4

@@ -6,3 +6,4 @@ TOKEN = config('TOKEN')
 DB = connect(config('DATABASE_URL', default='sqlite:///bot.db'))  # сама БДшка
 PORT = config('PORT', default=8443)
 HEROKU_APP_NAME = config('HEROKU_APP_NAME', default=None)
+    

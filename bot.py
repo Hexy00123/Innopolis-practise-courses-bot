@@ -31,7 +31,7 @@ def last(update, context):
         last = int(context.args[0])
     msg: telegram.Message = update.message
     for msg2 in model.Message.filter(chat_id=msg.chat_id).order_by(model.Message.id.desc()).limit(last):
-        msg.reply_text(f'User:{msg2.user.full_name}; wrote: {msg2.text}')
+        msg.reply_text(f'User:{msg2.user.full_name} \n wrote: {msg2.text}')
 
 
 # эта функция выполняется, когда пишется /start посмотри это ниже, там эта f() и используется

@@ -1,5 +1,5 @@
 from config import DB as db
-from model import*
+from model import *
 
 db.connect()
 db.create_tables([User, Message])
